@@ -11,6 +11,7 @@ Rumi is an innovative iOS mobile application that leverages Optical Character Re
 
 <img width="207" alt="Screen Shot 2023-11-05 at 1 54 19 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/355fc81d-7e18-4ed7-8702-fbd50f5957ad">
 <img width="204" alt="Screen Shot 2023-11-05 at 1 55 47 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/300ce205-8f6d-458c-aae4-9c269cb1b4cb">
+<img width="195" alt="Screen Shot 2023-11-05 at 2 07 32 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/7f11e0e0-e172-4749-8825-51b5a1d96f4c">
 <img width="205" alt="Screen Shot 2023-11-05 at 1 57 11 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/7cd21a11-9b03-4f3e-bb45-6a845f236131">
 
 ## Usage
