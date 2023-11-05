@@ -13,27 +13,11 @@ struct CollectionView: View {
         ZStack {
             Color(red: 237/255, green: 221/255, blue: 211/255)
                 .edgesIgnoringSafeArea(.all)
-//                VStack {
-//                    Rectangle()
-//                        .edgesIgnoringSafeArea(.top)
-//                        .foregroundColor(Color(red: 19/255, green: 22/255, blue: 28/255))
-//                        .padding(.bottom)
-//                        .frame(height:50)
-//                    Spacer()
                 ScrollView {
-//                    ListView() // to add in subcollections
-//                    Spacer()
                     QuotePreview(collection: collection)
                         .padding()
                 }
-//                }
-//                VStack {
-//                    Text("Collection Name")
-//                        .font(.largeTitle)
-//                        .foregroundColor(.white)
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                }
+
         } // ZStack
         .navigationBarTitle(collection.title)
 
