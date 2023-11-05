@@ -45,10 +45,15 @@ struct Carousel: View {
                                             )
                                             .shadow(radius: 3)
                                         VStack {
+                                            Image(systemName: "heart.text.square")
+                                                .font(.system(size: 50 , weight: .semibold))
+                                                
+                                                .foregroundColor(Color.light)
                                             Text(num.title)
-                                                .foregroundColor(Color(red: 237/255, green: 221/255, blue: 211/255))
-                                                .font(.system(size: 16, weight: .semibold))
-                                                .multilineTextAlignment(.center)
+                                                .foregroundColor(Color.light)
+                                                .font(.system(size: 24 , weight: .semibold))
+                                                .multilineTextAlignment(.leading)
+                                                .padding()
                                         }
                                     }
                             })
