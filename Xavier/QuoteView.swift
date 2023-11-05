@@ -35,9 +35,6 @@ struct QuoteView: View {
                     HStack {
                         Text("Page Number: ")
                             .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
-//                        if let pageNum = quote.pageNum {
-//                            Text()
-//                        }
                         Text(quote.pageNum)
                             .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
                         Spacer()
@@ -48,43 +45,23 @@ struct QuoteView: View {
                         .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
                         .font(.system(size: 24, weight: .bold))
                         .padding()
-                    Spacer()
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 8) // Creating a RoundedRectangle with rounded corners
-                            .stroke(Color(red: 110/255, green: 81/255, blue: 60/255), lineWidth: 1) // Applying a white stroke with a line width of 2
-//                            .frame(height: 350)
-                            .padding(.horizontal, 2)
-                       
-                            
-                        ScrollView {
-                            
-                            HStack {
-                                if let notes = quote.notes {
-                                    Text(notes)
-                                        .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
-                                        .padding()
-                                    Spacer()
-                                } else {
-                                    Text("")
-                                }
-                            }
-                        } //scrollview
-                    }//zstack
+                    TextEditBox(initialText: "Any notes you add will go here. \nThis is an example of a multi-line string. xxxxxxxxxxxxxxxxxxxxxxx\nxxxx \n\netc.", message:"")
+                        .padding(.horizontal)
+
                     
                     
                 } //vstack
             } //scrollview
             VStack {
                 Spacer()
-//                NavigationLink( destination: EditQuoteView(quote: quote), label: {
                     HStack {
                         Spacer()
-                        Text("Edit Page") //navigationlink?
+                        Text("Edit Page")
                             .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
                             .fontWeight(.bold)
                         Spacer()
                     } //hstack
-//                })
+
             } // vstack
             
         } //zstack
