@@ -26,7 +26,6 @@ struct QuotePreview: View {
                                     Spacer()
                                 }
                                 HStack {
-//                                    if let source = quote.source {
                                         Text("source")
                                             .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
                                             .font(.footnote)
@@ -37,7 +36,6 @@ struct QuotePreview: View {
                                             .foregroundColor(Color(red: 110/255, green: 81/255, blue: 60/255))
                                             .font(.footnote)
                                         Spacer()
-//                                    }
                                 }
                                 
                             } //VStack
@@ -48,7 +46,6 @@ struct QuotePreview: View {
                     
                 }
             } // VStack
-//            Spacer()
         } // HStack
         
     }
