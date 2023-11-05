@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
-//        NavigationView {
             VStack {
                 ForEach(sources) { num in
                     NavigationLink( destination: SourceView(source: num),
@@ -20,14 +19,20 @@ struct ListView: View {
                                 Image("sepia-h")
                                     .resizable()
                                     .scaledToFit()
-    //                                .frame(width: 180)
                                     .clipped()
                                     .cornerRadius(8)
-    //                                .padding()
-                                Text(num.title)
-                                    .foregroundColor(Color(red: 237/255, green: 221/255, blue: 211/255))
-                                    .font(.system(size: 16, weight: .semibold))
-                                    .multilineTextAlignment(.center)
+                                HStack {
+                                    Text(num.title)
+                                        .foregroundColor(Color.light)
+                                        .font(.system(size: 24, weight: .semibold))
+                                        .multilineTextAlignment(.center)
+                                        .padding()
+                                    Spacer()
+                                    Image(systemName: "heart")
+                                        .font(.system(size: 40))
+                                        .foregroundColor(Color.light)
+                                        .padding()
+                                }
                             }
                             Spacer()
                         }
@@ -35,7 +40,6 @@ struct ListView: View {
                 }
             }
             
-//        }
     }
     
 }
