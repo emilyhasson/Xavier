@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct TextEditBox: View {
+    var message: String
     @State private var text = ""
     
-    init(initialText: String = "") {
+    init(initialText: String = "", message: String = "Enter your text") {
             self._text = State(initialValue: initialText)
+            self.message = message
         }
     
     var body: some View {
-        List {
-            Text("Enter the message")
+        VStack {
+            Text(message)
+                .foregroundColor(Color.medium)
             ZStack {
                 TextEditor(text: $text)
+                    .frame(minHeight: 20, maxHeight: 500)
+                    .background(Color.light)
                 Text(text)
                     .opacity(text.isEmpty ? 1 : 0)
                     .opacity(0)
@@ -32,6 +37,6 @@ struct TextEditBox: View {
 
 struct TextEditBox_Previews: PreviewProvider {
     static var previews: some View {
-        TextEditBox(initialText: "Initial text")
+        TextEditBox(initialText: "Initial text", message: "enter some text")
     }
 }
