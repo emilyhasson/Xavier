@@ -6,29 +6,53 @@
 //
 
 import SwiftUI
+import Vision
 
 struct ImageProcessingView: View {
+    @StateObject private var ocrViewModel = OCRViewModel()
     var image: UIImage?
 
     var body: some View {
         ZStack {
-            Color(red: 237/255, green: 221/255, blue: 211/255).edgesIgnoringSafeArea(.all)
+            Color.light.edgesIgnoringSafeArea(.all)
             if let uiImage = image {
                 VStack {
                     Image(uiImage: uiImage)
                         .resizable()
                         .scaledToFit() // Adjust the size as needed
                         .padding()
-                    LoadingAnimation()
-                        .padding(.top)
+                    if ocrViewModel.isProcessing {
+                        LoadingAnimation()
+                            .padding(.top)
+                    } else{
+                        ScrollView {
+                            Text(ocrViewModel.recognizedText)
+                                .padding()
+                        }
+                        NavigationLink (destination:
+                                            EditQuoteView(quote: ocrViewModel.recognizedText),
+                                        label: {
+                                            Text("Next >")
+                        })
+                    }
+                    
                     Spacer()
+                    
+                    
                 }//vstack
+                
+                .onAppear {
+                    ocrViewModel.recognizeText(from: uiImage)
+                }
                 
             } else {
                 Text("Error: No image available").foregroundColor(.white)
             }
         }//zstack
     }
+    
+    
+    
 }
 
 struct ImageProcessingView_Previews: PreviewProvider {
