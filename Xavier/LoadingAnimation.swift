@@ -8,34 +8,6 @@
 import SwiftUI
 
 struct LoadingAnimation: View {
-//    @State private var isLoading = false
-//
-//        var body: some View {
-//            ZStack {
-//
-//                Text("Loading")
-//                    .font(.system(.body, design: .rounded))
-//                    .bold()
-//                    .offset(x: 0, y: -25)
-//
-//                RoundedRectangle(cornerRadius: 3)
-//                    .stroke(Color(.systemGray5), lineWidth: 3)
-//                    .frame(width: 250, height: 3)
-//
-//                RoundedRectangle(cornerRadius: 3)
-//                    .stroke(Color.green, lineWidth: 3)
-//                    .frame(width: 30, height: 3)
-//                    .offset(x: isLoading ? 110 : -110, y: 0)
-//                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
-//            }
-//            .onAppear() {
-//                self.isLoading = true
-//            }
-//        }
-    
-    // light: Color(red: 237/255, green: 221/255, blue: 211/255)
-    // med: Color(red: 110/255, green: 81/255, blue: 60/255)
-    // dark: Color(red: 41/255, green:21/255, blue:8/255)
     
     @State private var isLoading = false
 
