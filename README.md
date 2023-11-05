@@ -9,6 +9,10 @@ Rumi is an innovative iOS mobile application that leverages Optical Character Re
 - **Library Organization**: Keep your captures organized with customizable categories.
 - **Note-Taking**: Attach personal notes to your saved quotes for reflection or study.
 
+<img width="307" alt="Screen Shot 2023-11-05 at 1 54 19 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/355fc81d-7e18-4ed7-8702-fbd50f5957ad">
+<img width="304" alt="Screen Shot 2023-11-05 at 1 55 47 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/300ce205-8f6d-458c-aae4-9c269cb1b4cb">
+<img width="305" alt="Screen Shot 2023-11-05 at 1 57 11 AM" src="https://github.com/emilyhasson/Xavier/assets/55060753/7cd21a11-9b03-4f3e-bb45-6a845f236131">
+
 ## Usage
 
 1. **Capture Text**: Simply take a photo of any page or select an image from your gallery.
