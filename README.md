@@ -1,7 +1,7 @@
-# Rumi - Capture, Store, and Organize Texts with Ease
+# Xavier - Capture, Store, and Organize Texts with Ease
 ### A BuildIllinois project by Emily Hasson and Daniel Philipov
 
-Rumi is an innovative iOS mobile application that leverages Optical Character Recognition (OCR) technology to transform the way you interact with physical texts. With Rumi, you can quickly capture photos of your favorite books and documents, saving the content digitally for easy storage, organization, and retrieval. Enhance your reading experience by adding personal notes and reflections to your saved quotes and passages.
+Xavier is an innovative iOS mobile application that leverages Optical Character Recognition (OCR) technology to transform the way you interact with physical texts. With Xavier, you can quickly capture photos of your favorite books and documents, saving the content digitally for easy storage, organization, and retrieval. Enhance your reading experience by adding personal notes and reflections to your saved quotes and passages.
 
 ## Features
 
